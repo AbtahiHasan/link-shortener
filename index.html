@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shorten it</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="max-w-[1200px] mx-auto">
+      <form
+        id="shorten-it"
+        style="
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        "
+        class="flex"
+      >
+        <input
+          id="input"
+          type="text"
+          placeholder="example: abc.com"
+          class="input input-bordered input-error w-full max-w-xs"
+        />
+        <button class="btn" id="shorten-btn">Shorten it</button>
+      </form>
+
+      <!-- Put this part before tag -->
+      <input type="checkbox" id="my-modal-6" class="modal-toggle" />
+      <div class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <p class="py-4 w-[90%] mx-auto">
+            <input
+              type="text"
+              id="link"
+              placeholder="Type here"
+              class="input input-bordered input-accent w-full max-w-xs"
+            />
+            <button class="btn" id="copy">copy</button>
+          </p>
+          <div class="modal-action">
+            <label for="my-modal-6" class="btn">close</label>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
